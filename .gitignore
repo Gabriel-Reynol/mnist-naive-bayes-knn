@@ -1,0 +1,20 @@
+# Ambiente virtual
+.venv/
+.venv-cv/
+venv/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Dataset MNIST
+dados/
+*.arff
+*-ubyte
+*.zip
+
+# Arquivos do sistema e editor
+.DS_Store
+Thumbs.db
+.vscode/

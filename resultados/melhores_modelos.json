@@ -1,0 +1,19 @@
+{
+  "NB": {
+    "nome": "NB_Multinomial",
+    "parametros": {
+      "algoritmo": "NB",
+      "tipo": "multinomial"
+    },
+    "erro_validacao": 0.17625
+  },
+  "KNN": {
+    "nome": "KNN_k3_Euclidiana",
+    "parametros": {
+      "algoritmo": "KNN",
+      "k": 3,
+      "distancia": "euclidean"
+    },
+    "erro_validacao": 0.029666666666666668
+  }
+}

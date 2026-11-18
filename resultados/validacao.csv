@@ -1,0 +1,7 @@
+modelo,algoritmo,erro_validacao
+KNN_k3_Euclidiana,KNN,0.029666666666666668
+KNN_k5_Euclidiana,KNN,0.0325
+KNN_k3_Manhattan,KNN,0.03666666666666667
+KNN_k5_Manhattan,KNN,0.038
+NB_Multinomial,NB,0.17625
+NB_Gaussiano,NB,0.44275
