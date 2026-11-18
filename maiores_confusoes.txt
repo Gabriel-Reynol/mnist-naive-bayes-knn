@@ -1,0 +1,15 @@
+KNN_k3_Euclidiana
+  7->1: 21
+  4->9: 19
+  8->3: 16
+  2->7: 13  (empate com 1 outra(s))
+  3->5: 13  (empate com 1 outra(s))
+  5->3: 11  (empate com 1 outra(s))
+
+NB_Multinomial
+  4->9: 176
+  5->3: 107
+  5->8: 78
+  7->9: 69
+  2->8: 66  (empate com 1 outra(s))
+  9->4: 66  (empate com 1 outra(s))

@@ -144,6 +144,22 @@ def plotar_medias(X: np.ndarray, y: np.ndarray) -> None:
     plt.close(fig)
 
 
+def plotar_variancias(X: np.ndarray, y: np.ndarray) -> None:
+    """Visualiza a variancia dos pixels para cada classe do MNIST."""
+    fig, axes = plt.subplots(2, 5, figsize=(11, 5))
+
+    for digito, ax in enumerate(axes.flat):
+        variancia = X[y == digito].var(axis=0).reshape(28, 28)
+        ax.imshow(variancia, cmap="hot")
+        ax.set_title(f"Digito {digito}")
+        ax.axis("off")
+
+    fig.suptitle("Variancia dos pixels por classe - treinamento")
+    fig.tight_layout()
+    fig.savefig(RESULTADOS / "variancias_por_classe.png", dpi=160)
+    plt.close(fig)
+
+
 def finalizar() -> None:
     if not CONFIGURACAO.exists():
         raise FileNotFoundError("Execute 'python main.py validar' antes de finalizar.")
@@ -154,6 +170,7 @@ def finalizar() -> None:
     X, y = carregar_csv(DADOS / "mnist_train.csv")
     X_teste, y_teste = carregar_csv(DADOS / "mnist_test.csv")
     plotar_medias(X, y)
+    plotar_variancias(X, y)
 
     resultados = []
     for algoritmo in ("NB", "KNN"):
